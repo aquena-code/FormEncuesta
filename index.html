@@ -1,0 +1,136 @@
+
+
+<!-- 
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<html>
+  <head>
+    <link rel="stylesheet" href="cssPrincipal.css" type="text/css" />
+  </head>
+  <body>
+    <h1 id="title">Encuesta de SitoWeb</h1>
+    <p id="description">Gracias por tomarse su tiempo en para ayudarnos a mejorar nuestra plataforma.</p>
+    <form id="survey-form" >
+      <label class="lbTextos" for="name" id="name-label">Name</label><br/>
+      <input class="iptDatos" id="name" type="text" name="name" placeholder="Enter your name" required>
+      
+      <br/>
+      <label class="lbTextos" for="email" id="email-label">Email</label><br/>
+      <input class="iptDatos" id="email" type="email" name="email" placeholder="Enter your Email"  required/>
+      
+      <br/>
+      <label class="lbTextos" for="number" id="number-label">Age <span>(optional)</span></label><br/>
+      <input class="iptDatos" id="number" type="number" name="number" min="10" max="99"  placeholder="Age"/>
+      
+      <br/>
+      <label class="lbTextos" for="dropdown" id="dropdown-label">Which option best describes your courrent role?</label>
+      <br/>
+      <select class="iptDatos" id="dropdown" >
+        <option value="op1" blocked>Select current role</option>
+        <option value="op2" >Student</option>
+        <option value="op3">Full Time Job</option>
+        <option value="op4">Full Time Learned</option>
+        <option value="op5">Prefer not say</option>
+        <option value="op6">Other</option>
+      </select>
+      
+      <div>
+        <p class="lbTextos">Would you recommend SitioWEB to a friend?</p>
+        <br/>
+        
+        <div class="divMultiple">
+        <input id="radio-definitely" class="fTable irdFormat" type="radio" value="1" name="recomended"/>
+        <label class="lbTextos fTable" for="radio-definitely">Definitely</label>
+        </div>
+        
+
+         <div class="divMultiple">
+          <input class="fTable irdFormat" id="radio-maybe" type="radio" value="2" name="recomended"/>
+          <label class="lbTextos fTable" for="radio-maybe">Maybe</label>
+        </div>
+
+        
+        <div class="divMultiple">
+          <input class="fTable irdFormat" id="radio-notsure" type="radio" value="3" name="recomended"/>
+          <label class="lbTextos fTable" for="radio-notsue">Not sure</label>
+        </div>
+      </div>
+      <br/><br/>
+      <label class="lbTextos" for="dropdown2">What is your favorite feature of SitioWEB?</label>
+      <br/>
+      <select class="iptDatos" id="dropdown2">
+        <option value="DD1" selected>Select an option</option>
+        <option value="DD2">Challenges</option>
+        <option value="DD3">Projects</option>
+        <option value="DD4">Community</option>
+        <option value="DD5">Open Source</option>
+      </select>
+      
+      
+      <div>
+        <p class="lbTextos" >What would you like to see improved? <span class="spanSub">(Check all that apply)</span></p>
+        <br/>
+        
+        <div class="divMultiple">
+        <input class="fTable irdFormat" id="chbox1" type="checkbox" value="chbox1" name="improve"/>
+        <label class="fTable lbTextos" for="chbox1">Front-end Projects.</label>
+        </div>
+
+        
+        <div class="divMultiple">
+        <input class="fTable irdFormat" id="chbox2" type="checkbox" value="chbox2" name="improve"/>
+        <label class="fTable lbTextos" for="chbox2">Back-end Projects</label>
+        </div>
+        <div class="divMultiple">
+        <input class="fTable irdFormat" id="chbox3" type="checkbox" value="chbox3" name="improve"/>
+        <label class="fTable lbTextos" for="chbox3">Data Visualization</label>
+        </div>
+        <div class="divMultiple">
+        <input class="fTable irdFormat" id="chbox4" type="checkbox" value="chbox4" name="improve"/>
+        <label class="fTable lbTextos" for="chbox4">Challlenges</label>
+        </div>
+        <div class="divMultiple">
+        <input class="fTable irdFormat" id="chbox5" type="checkbox" value="chbox5" name="improve"/>
+        <label class="fTable lbTextos" for="chbox5">Open Source Community</label>
+        </div>
+        <div class="divMultiple">
+        <input class="fTable irdFormat" id="chbox6" type="checkbox" value="chbox6" name="improve"/>
+        <label class="fTable lbTextos" for="chbox6">Gitter help rooms</label>
+        </div>
+        <div class="divMultiple">
+        <input class="fTable irdFormat" id="chbox7" type="checkbox" value="chbox7" name="improve"/>
+        <label class="fTable lbTextos" for="chbox7">Videos</label>
+        </div>
+        <div class="divMultiple">
+        <input class="fTable irdFormat" id="chbox8" type="checkbox" value="chbox8" name="improve"/>
+        <label class="fTable lbTextos" for="chbox8">City Meetups</label>
+        </div>
+        <div class="divMultiple">
+        <input class="fTable irdFormat" id="chbox9" type="checkbox" value="chbox9" name="improve"/>
+        <label class="fTable lbTextos"  for="chbox9">Wiki</label>
+        </div>
+        <div class="divMultiple">
+        <input class="fTable irdFormat" id="chbox10" type="checkbox" value="chbox10" name="improve"/>
+        <label class="fTable lbTextos" for="chbox10">Forum</label>
+        </div>
+        <div class="divMultiple">
+        <input class="fTable irdFormat" id="chbox11" type="checkbox" value="chbox11" name="improve"/>
+        <label class="fTable lbTextos" for="chbox11">Additinal Courses</label>
+        </div>
+      </div>
+      <br/><br/>
+      <label class="lbTextos" for="id-textarea">Any comments ot suggenstions?</label>
+      <br/>
+      <textarea class="iptDatos" id="id-textarea" rows="5" placeholder="Enter your comment here..."></textarea>
+      <br/>
+      <input class="lbTextos" id="submit" type="submit" name="submit" value="Submit"/>
+
+    </form>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+body{
+  background-image: url("https://image.freepik.com/vector-gratis/formulario-registro_23-2147981201.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  
+  
+}
+#title{
+  color: white;
+  font-family: monospace;
+  text-align: center;
+  font-size: 280%;
+  margin: 50px 0px 0px 0px;
+}
+#description{
+  color: hsl(200, 60%, 95%);
+  font-size: 120%;
+  font-family: georgia;
+  text-align: center;
+  margin: 0px;
+  font-style: italic;
+}
+#survey-form{
+  margin: 30px auto 0px auto;
+  width: 600px;
+  border-radius: 5px;
+  background-color: hsla(245, 60%, 10%, 80%);
+  padding: 50px 70px 70px 50px;
+}
+.otro{
+  margin: 0px auto;
+  border: 1px solid red;
+  width: 720px;
+}
+
+.lbTextos{
+  color: white;
+  font-family: arial;
+  font-size: 120%;
+  display: inline-block;
+  margin: 0px 0px 5px 0px;
+}
+
+.iptDatos{
+  width: 100%;
+  border: 1px solid hsla(245, 50%, 15%,80%);
+  border-radius: 8px;
+  font-family: arial;
+  font-size: 100%;
+  color: hsl(0, 0%, 35%);
+  padding: 10px 10px;
+  margin: 0px 0px 20px 0px;
+  
+}
+.iptDatos:focus{
+  border: 1px solid hsla(245, 50%, 50%,80%);
+}
+
+.divMultiple{
+  display: table;
+  margin: 10px 0px;
+}
+.fTable{
+  display: table-cell;
+  vertical-align: middle;
+}
+.irdFormat{
+  width: 20px;
+  height: 20px;
+  margin: 0px 8px 0px 0px;
+  
+}
+
+.spanSub{
+  font-size: 90%;
+}
+
+#submit{
+  width: 100%;
+  background-color: hsl(145, 70%, 45%);
+  padding: 15px 0px;
+  border-radius: 5px;
+  border: 1px solid hsla(245, 50%, 15%,80%);
+}
+
+@media(max-width: 750px){
+  #survey-form{
+    width: 80%;
+  }
+  body{
+    overflow: none;
+  }
+}
